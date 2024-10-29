@@ -12,20 +12,26 @@ def get_user_input():
 
     print("Welcome to User Input Number Tracker!")
     while True:
-        try:
             user_name = input("Kindly enter your name to start: ")
 
             print("Thank you for inputting you name.\nTracker starting!")
-        
-            user_number = int(input("Kindly enter a number ranging from 1 to 50 only: "))
-        
-            if 0 < user_number <= 50:
-                input("Your input has been recorded. Would you like to continue? (yes/no): ")
+    
+            while True:    
+                try:
+                    user_number = int(input("Kindly enter a number ranging from 1 to 50 only: "))
+                    
+                    if 0 < user_number <= 50:
+                        input("Your input has been recorded. Would you like to input a number again? (yes/no): ")
+                        
+                except:
+                    user_number > 50
+                    print("Thank you for using User Input Number Tracker! Here are your inputted numbers: ")
+                    break
+
+            if user_number == "no":
+                break
+            elif user_number == "yes":
                 continue
-        except:
-            user_number > 50
-            print("Here are your inputted numbers. Thank you for using User Input Number Tracker!")
-            break
 
 #contiunuing the user input
 def continue_user_input():
