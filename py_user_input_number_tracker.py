@@ -7,6 +7,11 @@
 #31- 40 = ?
 #41- 50 = ?
 
+#to get user input
 def get_user_input():
+
+#contiunuing the user input
 def continue_user_input():
+
+#displaying all of the inputted number within their ranges
 def display_user_input():
