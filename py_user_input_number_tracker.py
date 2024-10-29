@@ -15,3 +15,5 @@ def continue_user_input():
 
 #displaying all of the inputted number within their ranges
 def display_user_input():
+
+get_user_input()
