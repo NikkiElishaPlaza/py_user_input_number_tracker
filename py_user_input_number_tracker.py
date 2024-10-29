@@ -26,19 +26,10 @@ def get_user_input():
                 except:
                     user_number > 50
                     print("Thank you for using User Input Number Tracker! Here are your inputted numbers: ")
+
+                if user_number == "no":
                     break
-
-            if user_number == "no":
-                break
-            elif user_number == "yes":
-                continue
-
-#contiunuing the user input
-def continue_user_input():
-    filler1 = print("filler1")
-
-#displaying all of the inputted number within their ranges
-def display_user_input():
-    filler2 = print("filler2")
+                elif user_number == "yes":
+                    continue
 
 get_user_input()
