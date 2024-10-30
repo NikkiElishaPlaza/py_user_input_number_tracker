@@ -40,8 +40,16 @@ def get_user_input():
                     print(f"41 - 50 = {sum(1 for x in inputted_number if 41 <= x <= 50)}")
                     break           
             except:
-                print("Invalid input. Enter a number ranging from 1 to 50 only.")
-                continue
+                    print("Invalid input. Thank you for using User Input Number Tracker!🎉")
+                    #Display the results
+                    print("Here are your inputted numbers: ") 
+                    #printing them one by one
+                    print(f"1 - 10 = {sum(1 for x in inputted_number if 1 <= x <= 10)}")
+                    print(f"11 - 20 = {sum(1 for x in inputted_number if 11 <= x <= 20)}")
+                    print(f"21 - 30 = {sum(1 for x in inputted_number if 21 <= x <= 30)}")
+                    print(f"31 - 40 = {sum(1 for x in inputted_number if 31 <= x <= 40)}")
+                    print(f"41 - 50 = {sum(1 for x in inputted_number if 41 <= x <= 50)}")
+                    break
 
 #call funtion
 get_user_input()
