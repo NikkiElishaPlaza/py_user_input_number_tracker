@@ -41,7 +41,7 @@ def get_user_input():
                     break           
             except:
                 print("Invalid input. Enter a number ranging from 1 to 50 only.")
-                break
+                continue
 
 #call funtion
 get_user_input()
