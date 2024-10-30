@@ -34,12 +34,18 @@ def get_user_input():
                     
                     if continue_input == "no":
                         print("Thank you for using User Input Number Tracker!\nHere are your inputted numbers: ")
+                        #printing them one by one
+                        print(f"1 - 10 = {sum(1 for x in inputted_number if 1 <= x <= 10)}")
+                        print(f"11 - 20 = {sum(1 for x in inputted_number if 11 <= x <= 20)}")
+                        print(f"21 - 30 = {sum(1 for x in inputted_number if 21 <= x <= 30)}")
+                        print(f"31 - 40 = {sum(1 for x in inputted_number if 31 <= x <= 40)}")
+                        print(f"41 - 50 = {sum(1 for x in inputted_number if 41 <= x <= 50)}")
                         break
                     elif continue_input != "yes":
                         print("Invalid answer. Enter either yes or no only.")
             except:
-                print("Thank you for using User Input Number Tracker! Here are your inputted numbers: ")
-                break
+                print("Invalid input. Enter a number ranging from 1 to 50 only.")
+                continue
 
 #call funtion
 get_user_input()
