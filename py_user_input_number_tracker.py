@@ -10,13 +10,13 @@
 #to get user input
 def get_user_input():
     #greeting user
-    print("Welcome to User Input Number Tracker!")
+    print("✨ Welcome to User Input Number Tracker!✨")
 
     #asking user name for formality
     user_name = input("Kindly enter your name to start: ")
 
     #start tracker
-    print("Thank you for inputting you name.\nTracker starting!")
+    print(f"Thank you for entering your name. Welcome, {user_name}! \n🟢 Tracker starting!🟢")
 
     #now making this from the previous demo
     #making this a list
@@ -30,10 +30,10 @@ def get_user_input():
                     inputted_number.append(user_number) #store in an array
 
                     #how the user will continue inputting numbers
-                    continue_input = input("Your input has been recorded. \nWould you like to input a number again? (yes/no): ")
+                    continue_input = input("Your input has been recorded. 📝 \nWould you like to input a number again? (yes/no): ")
                     
                     if continue_input == "no":
-                        print("Thank you for using User Input Number Tracker!\nHere are your inputted numbers: ")
+                        print("Thank you for using User Input Number Tracker!🎉 \nHere are your inputted numbers: ")
                         #printing them one by one
                         print(f"1 - 10 = {sum(1 for x in inputted_number if 1 <= x <= 10)}")
                         print(f"11 - 20 = {sum(1 for x in inputted_number if 11 <= x <= 20)}")
